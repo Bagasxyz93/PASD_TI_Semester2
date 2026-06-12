@@ -7,7 +7,12 @@ class Mahasiswa {
         this.prodi = prodi;
     }
 
+    static void header() {
+        System.out.printf("%-10s %-15s %-20s\n", "NIM", "Nama", "Prodi");
+        System.out.println("-----------------------------------------------------");
+    }
+
     void tampil() {
-        System.out.println(nim + " | " + nama + " | " + prodi);
+        System.out.printf("%-10s %-15s %-20s\n", nim, nama, prodi);
     }
 }
